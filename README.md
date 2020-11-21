@@ -1,4 +1,6 @@
 # facial_expression
+This project provides two solutions for real-time facial expression recognition. One method is implemented by Linear SVM; the second is implemented by [Self-Cure-Network].
+
 ## Installation
 * A CUDA-enabled GPU is **strongly** recommened. 
 * Manul Installation guidance is provided as follows. If a version number is specified, please follow it to ensure no error occurs. 
@@ -18,12 +20,12 @@ pip install pandas
 
 ## Usage
 *  The current code configuration is for windows system. If running on other platforms, minor changes might be needed. 
-* Download [svm_linear.pkl] and [epoch46_acc0.8703.pth]. Put them under ./model. The first is reqired by webcam.py and the latter by webcam_scn.py.
-* To run the read-time facial expression classification implemented by SVM, run the following commands:
+* Download [svm_linear.pkl] and [epoch46_acc0.8703.pth]. Put them under ./model. The first is required by webcam.py and the latter by webcam_scn.py.
+* To run the real-time facial expression recognition implemented by SVM, run the following commands:
 ```bash
 python3 webcam.py
 ```
-* To run the read-time facial expression classification implemented by [Self-Cure-Network], run the following commands:
+* To run the real-time facial expression recognition implemented by [Self-Cure-Network], run the following commands:
 ```bash
 python3 webcam_scn.py
 ```
